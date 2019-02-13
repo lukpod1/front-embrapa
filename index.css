@@ -1,0 +1,16 @@
+.filete-barra-governo_verde {
+    background: url(./img/filete-barra-governo_verde.jpg) repeat;
+    width: 100%;
+    height: 28px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.barra-governo_verde {
+    background: url(./img/barra-governo_verde.jpg) no-repeat;
+    height: 28px;
+    position: relative;
+    bottom: 28px;
+    margin-bottom: -28px;
+    margin-left: 860px;
+}
