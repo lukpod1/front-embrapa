@@ -18,7 +18,7 @@
 </head>
 
 <body>
-
+    <!-- barra do governo -->
     <div class="filete-barra-governo_verde"></div>
     <a href="http://www.brasil.gov.br/" target="_blank">
         <div class="barra-governo_verde"></div>
@@ -26,8 +26,9 @@
 
     <div class="container">
 
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <a class="navbar-brand" href="#">SiBCTI</a>
+            <a class="navbar-brand" href="index.html">SiBCTI</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,17 +36,30 @@
 
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Arquivo</a>
+                        <div class="dropdown-menu" x-placement="bottom-start"
+                            style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                            <a class="dropdown-item" href="#">Abrir</a>
+                            <a class="dropdown-item" href="#">Novo</a>
+                            <a class="dropdown-item" href="#">Salvar</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Imprimir</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Classificar</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Idiomas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -55,18 +69,253 @@
             </div>
         </nav>
 
+        <ul class="nav nav-tabs ">
+            <li class="nav-item">
+                <a class="nav-link active show" data-toggle="tab" href="#propsolo1">Propriedade Solo I</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link show" data-toggle="tab" href="#profile">Propriedade Solo II</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link show" data-toggle="tab" href="#">Propriedade Água</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link show" data-toggle="tab" href="#">Classificação</a>
+            </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active show" id="propsolo1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <!-- <legend>Profundidade (cm)</legend> -->
+                                    <div class="card-header">Header</div>
+                                    <span class="letras">Z</span>
+                                    <div class="container">
 
-        <div class="jumbotron">
-            <h1 class="display-3">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-                to
-                featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+                                        <div class="form-group">
+                                            <label for="inputSempermeavel">Semipermeável</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">Impermeável</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <legend>Ca + Mg (cmolc kg-1)</legend>
+                                    <span class="letras">Y</span>
+                                    <div class="container">
+
+                                        <div class="form-group">
+                                            <label for="inputSempermeavel">0 - 20 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">20 -60 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">60 -120 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <legend>T (cmolc kg-1)</legend>
+                                    <span class="letras">T</span>
+                                    <div class="container">
+
+                                        <div class="form-group">
+                                            <label for="inputSempermeavel">0 - 20 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">20 -60 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">60 -120 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <legend>pH da Água</legend>
+                                    <span class="letras">H</span>
+                                    <div class="container">
+
+                                        <div class="form-group">
+                                            <label for="inputSempermeavel">0 - 20 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">20 -60 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">60 -120 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="col-6">
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <legend>Saturação com Sódio Trocável (100 Na T -1)</legend>
+                                    <span class="letras">S</span>
+                                    <div class="container">
+
+                                        <div class="form-group">
+                                            <label for="inputSempermeavel">0 - 20 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">20 -60 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">60 -120 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">120 -240 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <legend>Alumínio Trocável (cmolc kg-1)</legend>
+                                    <span class="letras">M</span>
+                                    <div class="container">
+
+                                        <div class="form-group">
+                                            <label for="inputSempermeavel">0 - 20 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">20 -60 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">60 -120 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <legend>Classe Textural</legend>
+                                    <span class="letras">V</span>
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <select class="custom-select">
+                                                <option selected="">Média</option>
+                                                <option value="1">Argilosa</option>
+                                                <option value="2">Siltosa</option>
+                                                <option value="3">Arenosa</option>
+                                                <option value="4">Muito Argilosa</option>
+                                                <option value="5">Média / Argilosa</option>
+                                                <option value="6">Média / Muito Argilosa</option>
+                                                <option value="7">Arenosa / Média</option>
+                                                <option value="8">Arenosa / Argilosa</option>
+                                                <option value="9">Argilosa / Muito Argilosa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            <div class="card border-primary mb-3">
+                                <fieldset>
+                                    <legend>Capacidade de Água Disponível (mm)</legend>
+                                    <span class="letras">C</span>
+                                    <div class="container">
+
+                                        <div class="form-group">
+                                            <label for="inputSempermeavel">0 - 20 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">20 -60 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                            <label for="inputSempermeavel">60 -120 cm</label>
+                                            <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation
+                    +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                    craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
+                    ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="dropdown1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
+                    fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer,
+                    iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                    Leggings gentrify squid 8-bit cred pitchfork.</p>
+            </div>
+            <div class="tab-pane fade" id="dropdown2">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
+                    cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party
+                    locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before
+                    they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+            </div>
         </div>
+
+
+
+        <!-- footer -->
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-2">
+                    <img class="mb-2" src="./img/embrapa.png" alt="" width="80" height="50">
+                    <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+                </div>
+                <div class="col-5">
+                    <h5>Sobre</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="http://www.embrapa.br/solos" target="_blank">Embrapa Solos</a></li>
+                        <li><a class="text-muted" href="#">Rua Jardim Botânico, 1.024 - Jardim Botânico</a></li>
+                        <li><a class="text-muted" href="#">Rio de Janeiro, RJ - Brasil - CEP 22460-000</a></li>
+                        <li><a class="text-muted" href="#">Tel.: (021) 2179 4500 - Fax: (021) 2274 5291</a></li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Empresa Brasileira de Pesquisa Agropecuária - Embrapa</a></li>
+                        <li><a class="text-muted" href="#">Todos os direitos reservados, conforme Lei n° 9.610.</a></li>
+                        <li><a class="text-muted" href="#"><a href="http://www21.sede.embrapa.br/politicapriv.htm/getView">Politica de Privacidade</a> - <a href="https://www.embrapa.br/fale-conosco/sac" target="_blank">SAC da Unidade</a></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 
 
