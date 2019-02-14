@@ -28,7 +28,9 @@
 
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <a class="navbar-brand" href="index.html">SiBCTI</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="" width="100px">            
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -69,48 +71,75 @@
             </div>
         </nav>
 
-        <ul class="nav nav-tabs ">
+        <ul class="nav nav-tabs justify-content-center ">
             <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#propsolo1">Propriedade Solo I</a>
+                <a class="nav-link active show" data-toggle="tab" href="#propsolo1">1º</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link show" data-toggle="tab" href="#profile">Propriedade Solo II</a>
+                <a class="nav-link show" data-toggle="tab" href="#propsolo2">2º</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link show" data-toggle="tab" href="#">Propriedade Água</a>
+                <a class="nav-link show" data-toggle="tab" href="#propagua">3º</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link show" data-toggle="tab" href="#">Classificação</a>
+                <a class="nav-link show" data-toggle="tab" href="#classificacao">Classificação</a>
             </li>
         </ul>
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active show" id="propsolo1">
                 <div class="container-fluid">
+                    <h2>Propriedades do Solo I</h2>
                     <div class="row">
                         <div class="col-6">
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <!-- <legend>Profundidade (cm)</legend> -->
-                                    <div class="card-header">Header</div>
-                                    <span class="letras">Z</span>
-                                    <div class="container">
-
-                                        <div class="form-group">
-                                            <label for="inputSempermeavel">Semipermeável</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                            <label for="inputSempermeavel">Impermeável</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                        </div>
+                            <div class="card border-success mb-3">                               
+                                <!-- <legend>Profundidade (cm)</legend> -->
+                                <div class="card-header">Profundidade (cm)<span class="letras">Z</span></div>
+                                <div class="card-body text-dark">
+                                    <div class="form-group">
+                                        <label for="inputSempermeavel">Semipermeável</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel" aria-describedby="semHelp">
+                                        <label for="inputSempermeavel">Impermeável</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel"
+                                                        aria-describedby="semHelp">
                                     </div>
-                                </fieldset>
+                                </div>                                
                             </div>
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <legend>Ca + Mg (cmolc kg-1)</legend>
-                                    <span class="letras">Y</span>
-                                    <div class="container">
+                            <div class="card border-success mb-3">                               
+                                <!-- <legend>Profundidade (cm)</legend> -->
+                                <div class="card-header">Ca + Mg (cmolc kg -¹)<span class="letras">Y</span></div>
+                                <div class="card-body text-dark">
+                                    <div class="form-group">
+                                        <label for="inputSempermeavel">0 - 20 cm</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel"
+                                            aria-describedby="semHelp">
+                                        <label for="inputSempermeavel">20 - 60 cm</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel"
+                                            aria-describedby="semHelp">
+                                        <label for="inputSempermeavel">60 - 120 cm</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel"
+                                            aria-describedby="semHelp">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-success mb-3">
+                                <div class="card-header">T (cmolc kg -¹)<span class="letras">T</span></div>          <div class="card-body text-dark">
+                                    <div class="form-group">
+                                        <label for="inputSempermeavel">0 - 20 cm</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel"
+                                            aria-describedby="semHelp">
+                                        <label for="inputSempermeavel">20 - 60 cm</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel"
+                                            aria-describedby="semHelp">
+                                        <label for="inputSempermeavel">60 - 120 cm</label>
+                                        <input type="text" class="form-control" id="inputSempermeavel"
+                                                aria-describedby="semHelp">
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="card border-success mb-3">
+                                
+                                    <div class="card-header">Ph de água<span class="letras">H</span></div> 
+                                    <div class="card-body text-dark">
 
                                         <div class="form-group">
                                             <label for="inputSempermeavel">0 - 20 cm</label>
@@ -124,47 +153,7 @@
                                                 aria-describedby="semHelp">
                                         </div>
                                     </div>
-                                </fieldset>
-                            </div>
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <legend>T (cmolc kg-1)</legend>
-                                    <span class="letras">T</span>
-                                    <div class="container">
-
-                                        <div class="form-group">
-                                            <label for="inputSempermeavel">0 - 20 cm</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                            <label for="inputSempermeavel">20 -60 cm</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                            <label for="inputSempermeavel">60 -120 cm</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </div>
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <legend>pH da Água</legend>
-                                    <span class="letras">H</span>
-                                    <div class="container">
-
-                                        <div class="form-group">
-                                            <label for="inputSempermeavel">0 - 20 cm</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                            <label for="inputSempermeavel">20 -60 cm</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                            <label for="inputSempermeavel">60 -120 cm</label>
-                                            <input type="text" class="form-control" id="inputSempermeavel"
-                                                aria-describedby="semHelp">
-                                        </div>
-                                    </div>
-                                </fieldset>
+                                
                             </div>
 
 
@@ -173,11 +162,9 @@
 
 
                         <div class="col-6">
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <legend>Saturação com Sódio Trocável (100 Na T -1)</legend>
-                                    <span class="letras">S</span>
-                                    <div class="container">
+                            <div class="card border-success mb-3">                            
+                                    <div class="card-header">Saturação com Sódio Trocável (100 Na T -¹)<span class="letras">S</span></div> 
+                                    <div class="card-body text-dark">
 
                                         <div class="form-group">
                                             <label for="inputSempermeavel">0 - 20 cm</label>
@@ -194,14 +181,13 @@
                                                 aria-describedby="semHelp">
                                         </div>
                                     </div>
-                                </fieldset>
+                                
                             </div>
 
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <legend>Alumínio Trocável (cmolc kg-1)</legend>
-                                    <span class="letras">M</span>
-                                    <div class="container">
+                            <div class="card border-success mb-3">                               
+                                    
+                                    <div class="card-header">Alumínio Trocável (cmolc kg -¹)<span class="letras">M</span></div> 
+                                    <div class="card-body text-dark">
 
                                         <div class="form-group">
                                             <label for="inputSempermeavel">0 - 20 cm</label>
@@ -215,14 +201,13 @@
                                                 aria-describedby="semHelp">
                                         </div>
                                     </div>
-                                </fieldset>
+                                
                             </div>
 
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <legend>Classe Textural</legend>
-                                    <span class="letras">V</span>
-                                    <div class="container">
+                            <div class="card border-success mb-3">
+                                
+                                    <div class="card-header">Classe Textural<span class="letras">V</span></div> 
+                                    <div class="card-body text-dark">
                                         <div class="form-group">
                                             <select class="custom-select">
                                                 <option selected="">Média</option>
@@ -238,52 +223,42 @@
                                             </select>
                                         </div>
                                     </div>
-                                </fieldset>
+                                
                             </div>
 
-                            <div class="card border-primary mb-3">
-                                <fieldset>
-                                    <legend>Capacidade de Água Disponível (mm)</legend>
-                                    <span class="letras">C</span>
-                                    <div class="container">
+                            <div class="card border-success mb-3">
+                                
+                                    <div class="card-header">Capacidade de Água Disponível (mm)<span class="letras">C</span></div> 
+                                    <div class="card-body text-dark">
 
                                         <div class="form-group">
                                             <label for="inputSempermeavel">0 - 20 cm</label>
                                             <input type="text" class="form-control" id="inputSempermeavel"
                                                 aria-describedby="semHelp">
-                                            <label for="inputSempermeavel">20 -60 cm</label>
+                                            <label for="inputSempermeavel">20 - 60 cm</label>
                                             <input type="text" class="form-control" id="inputSempermeavel"
                                                 aria-describedby="semHelp">
-                                            <label for="inputSempermeavel">60 -120 cm</label>
+                                            <label for="inputSempermeavel">60 - 120 cm</label>
                                             <input type="text" class="form-control" id="inputSempermeavel"
                                                 aria-describedby="semHelp">
                                         </div>
                                     </div>
-                                </fieldset>
+                                
                             </div>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile">
-                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation
-                    +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
-                    craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
-                    ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.
+            <div class="tab-pane fade" id="propsolo2">
+                <p>Propriedade Solo II
                 </p>
             </div>
-            <div class="tab-pane fade" id="dropdown1">
-                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
-                    fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer,
-                    iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
-                    Leggings gentrify squid 8-bit cred pitchfork.</p>
+            <div class="tab-pane fade" id="propagua">
+                <p>Propriedade Água</p>
             </div>
-            <div class="tab-pane fade" id="dropdown2">
-                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master
-                    cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party
-                    locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before
-                    they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+            <div class="tab-pane fade" id="classificacao">
+                <p>Classificação</p>
             </div>
         </div>
 
