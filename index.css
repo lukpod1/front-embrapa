@@ -1,3 +1,6 @@
+body {
+    font-size: 14px;
+}
 .filete-barra-governo_verde {
     background: url(./img/filete-barra-governo_verde.jpg) repeat;
     width: 100%;
@@ -22,7 +25,7 @@
 .letras {
     float: right;
     margin-right: 10px;
-    margin-top: -41px;
+    margin-top: -5px;
     color: #FF0000;
-    font-size: 21px;
+    font-size: 20px;
 }
